@@ -28,16 +28,17 @@ require(tigerstats)
 require(knitr)
 require(foreign)
 ```
-```{r, eval=FALSE}
-GSS <-read.dta(file="GSSxxxx.dta")
+```{r, eval=TRUE}
+GSS <-read.dta(file="GSS1996.dta")
 GSS <- droplevels(GSS)
 mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
 
 
-
-
+##Methods 
+ 
+ Today, we will be using the cat cat helper file to analyze the two categorical factors of race and the frequency in eating out. For us to figure out if there is a statistical difference from the other races and the frequency  from eating out. We will use numerical graphical,inferential methods to find the statistical difference from the two races from the frequency from eating out. 
 
 
 
