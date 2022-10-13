@@ -64,3 +64,17 @@ colPerc(table1)
 The numerical results show that about 83% of the white people eat out, and 17%  of them do not. About 69% of the black people eat out, and 31% do not eat out. Now, for the others 78% of people do eat out and 22% of the rest do not. Stating that the white people eat out the most from all the rest, and the african americans and the rest eat the least. 
 
 
+## Inferential  
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+``````{r}
+fisherXY(mydata$race,mydata$eatout,printAll = TRUE)
+```
+
+The fisher XY test shows that there is a statistical difference from the white and the black people. The p value between me is  0.0003864 this is way to low. The p value for the black people and others is 0.2815 and this one is very high. Stating that there's no statistical difference. The p value between white and others is high at 0.3543. Indicated that there is no statistical difference. 
+
