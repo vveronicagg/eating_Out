@@ -40,6 +40,14 @@ mydata <- na.omit(mydata)
  
  Today, we will be using the cat cat helper file to analyze the two categorical factors of race and the frequency in eating out. For us to figure out if there is a statistical difference from the other races and the frequency  from eating out. We will use numerical graphical,inferential methods to find the statistical difference from the two races from the frequency from eating out. 
 
+##Graphical results 
 
 
+#### Plot barplots tigerstats way
 
+```{r}
+barchartGC(~race + eatout,data=mydata)
+barchartGC(~race + eatout,data=mydata, type="percent")
+
+```
+This bar chart states that the white people are about 85% eating out less than the 20% don't eat out. About 70% of the black people eat out and 30% do not. For the other races 79% eat out and 22% do not eat out. the white people eat out the most, the black people eat out the less. The other races are in the middle of the white and black. 
